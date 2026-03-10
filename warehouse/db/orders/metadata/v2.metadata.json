@@ -1,0 +1,92 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "4c4503a6-0321-4af0-a184-925a957e91db",
+  "location" : "/Users/vijaymurthyms/projects/iceberg/iceberg-mastery/warehouse/db/orders",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1773164508563,
+  "last-column-id" : 4,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "order_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "customer",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 4,
+      "name" : "order_date",
+      "required" : false,
+      "type" : "date"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "vijaymurthyms",
+    "write.format.default" : "parquet",
+    "write.parquet.compression-codec" : "snappy"
+  },
+  "current-snapshot-id" : 549342836411795743,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 549342836411795743,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 549342836411795743,
+    "timestamp-ms" : 1773164508563,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1773163443104",
+      "added-data-files" : "3",
+      "added-records" : "3",
+      "added-files-size" : "3456",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "3456",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.3",
+      "app-id" : "local-1773163443104",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.7.0 (commit 5f7c992ca673bf41df1d37543b24d646c24568a9)"
+    },
+    "manifest-list" : "/Users/vijaymurthyms/projects/iceberg/iceberg-mastery/warehouse/db/orders/metadata/snap-549342836411795743-1-2ce18663-b7d6-4579-9efd-f86bcee04869.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1773164508563,
+    "snapshot-id" : 549342836411795743
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1773163695716,
+    "metadata-file" : "/Users/vijaymurthyms/projects/iceberg/iceberg-mastery/warehouse/db/orders/metadata/v1.metadata.json"
+  } ]
+}
